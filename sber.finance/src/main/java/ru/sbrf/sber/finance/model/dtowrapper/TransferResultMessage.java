@@ -1,0 +1,18 @@
+package ru.sbrf.sber.finance.model.dtowrapper;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.math.BigDecimal;
+@Getter
+@Setter
+@AllArgsConstructor
+public class TransferResultMessage {
+    private Long transactionIdFrom;
+    private Long transactionIdTo;
+    private Status status;
+    private BigDecimal amount;
+    private Long accountIdFrom;
+    private Long accountIdTo;
+}
